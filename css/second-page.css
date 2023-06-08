@@ -1,0 +1,62 @@
+.second-page__body {
+    padding-top: 180px;
+}
+
+.body-second {
+    display: flex;
+    justify-content: center;
+    column-gap: 115px;
+    flex-wrap: wrap;
+}
+
+.body-second__image {
+    max-width: 705px;
+}
+
+.body-second__info {
+    max-width: 410px;
+    padding-left: 20px;
+}
+
+.info__titlebox:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.info__list {
+    display: flex;
+    row-gap: 12px;
+    flex-direction: column;
+}
+
+.info__list:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.info__list li {
+    position: relative;
+    padding-left: 32px;
+}
+
+.info__list li::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url('../img/icons/check.svg') center / cover no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    transition: transform 1s linear 0s;
+}
+
+.info__list li:hover {
+    text-decoration: underline;
+}
+
+.info__list li:hover::before {
+    transform: rotate(360deg) scale(1.5);
+}
+
+
+.button--pad32 {
+    padding: 16px 32px;
+}

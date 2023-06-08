@@ -1,0 +1,135 @@
+.third-page__body {
+    padding-top: 180px;
+}
+
+.body-third {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.titlebox--centred {
+    text-align: center;
+}
+
+.support {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.support__link {
+    flex: 0 1 25%;
+    display: inline-flex;
+    justify-content: center;
+    color: #9A9CA5;
+    font-weight: 700;
+    padding: 10px 0px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.support__link:hover {
+    border: 1px solid #FF3F3A;
+    color: #FF3F3A;
+}
+
+.support__link:hover span::before {
+    animation-play-state: paused;
+}
+
+.support__link span {
+    position: relative;
+    padding-left: 24px;
+}
+
+
+.support__link span::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    left: 0px;
+    animation: puls-icon 1s linear infinite 0s;
+}
+
+@keyframes puls-icon {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+
+.link1 span::before {
+    background: url('../img/icons/star.svg') 0px 0px / 16px 16px no-repeat;
+}
+
+.link2 span::before {
+    background: url('../img/icons/like.svg') 0px 0px / 16px 16px no-repeat;
+}
+
+.link3 span::before {
+    background: url('../img/icons/Layouts.svg') 0px 0px / 16px 16px no-repeat;
+}
+
+.link4 span::before {
+    background: url('../img/icons/Chat.svg') 0px 0px / 16px 16px no-repeat;
+}
+
+.link1:hover span::before {
+    background: url('../img/icons/starhover.svg') 0px 0px / 16px 16px no-repeat;
+}
+
+.link2:hover span::before {
+    background: url('../img/icons/likehover.svg') 0px 0px / 16px 16px no-repeat;
+}
+
+.link3:hover span::before {
+    background: url('../img/icons/Layoutshover.svg') 0px 0px / 16px 16px no-repeat;
+}
+
+.link4:hover span::before {
+    background: url('../img/icons/Chathover.svg') 0px 0px / 16px 16px no-repeat;
+}
+
+.body-third__block {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+
+.body-third__aricle {
+    max-width: 600px;
+    padding-right: 105px;
+
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    color: #1E212C;
+}
+
+article>*:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.body-third__image {
+    display: inline-block;
+    max-width: 600px;
+    padding-bottom: 20px;
+}

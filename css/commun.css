@@ -1,0 +1,88 @@
+[class*="__container"] {
+    max-width: 1260px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    font-size: 16px;
+    position: relative;
+    z-index: 20;
+}
+
+body {
+    color: #424551;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.button {
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    padding: 16px 40px;
+    display: inline-block;
+    font-weight: 700;
+    color: #ffff;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.button>span {
+    position: relative;
+    z-index: 5;
+}
+
+.button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    transition: all 1s linear 0s;
+    box-shadow: inset 2px 2px 5px 5px #1e212c00, inset -2px -2px 5px 5px #1e212c00;
+}
+
+.button:hover::before {
+    background-color: #FF3F3A;
+    box-shadow: inset 2px 2px 5px 5px #1e212c46, inset -2px -2px 5px 5px #1e212c46;
+}
+
+.button:hover {
+    color: #ffff;
+
+}
+
+.button--transparent {
+    color: #FF3F3A;
+    border: 1px solid #FF3F3A;
+    padding: 15px 39px;
+    background: transparent;
+
+}
+
+.titlebox {
+    color: #1E212C;
+}
+
+.titlebox>*:first-child {
+    margin-bottom: 8px;
+}
+
+.titlebox__lable {
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.big-numbers,
+.titlebox__title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 60px;
+
+}
